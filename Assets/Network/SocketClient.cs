@@ -110,7 +110,6 @@ public class SocketClient : MonoBehaviour
         }
         try
         {
-
             Debug.Log("SendMessage1 conn : " + socketConnection.Connected);
             // Get a stream object for writing.             
             NetworkStream stream = socketConnection.GetStream();

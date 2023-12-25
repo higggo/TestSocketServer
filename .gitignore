@@ -6,6 +6,7 @@
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uilds/
+/[Bb]uild/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
@@ -52,7 +53,6 @@ ExportedObj/
 sysinfo.txt
 
 # Builds
-/[Bb]ibrary/
 *.apk
 *.unitypackage
 

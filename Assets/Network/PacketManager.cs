@@ -35,6 +35,12 @@ public struct TestPacket
 {
     [MarshalAs(UnmanagedType.I4)]
     public int typeOfService;
+    [MarshalAs(UnmanagedType.I4)]
+    public int displayId;
+    [MarshalAs(UnmanagedType.I4)]
+    public int payloadLength;
+    [MarshalAs(UnmanagedType.I4)]
+    public int direction;
 }
 
 public class PacketManager
@@ -75,6 +81,9 @@ public class PacketManager
     public byte[] GetTestPacket(int test)
     {
         testPacket.typeOfService = 1;
+        testPacket.displayId = displayId;
+        testPacket.payloadLength = 4;
+        testPacket.direction = test;
 
         return Serialize<TestPacket>(testPacket);
     }
